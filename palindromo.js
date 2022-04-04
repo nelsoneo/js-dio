@@ -17,4 +17,22 @@ function palindromo(strPalindrome) {
   }
 }
 
-console.log(palindromo('radar'));
+// console.log(palindromo('radar'));
+
+function verificaPalindromo(string){
+    try {
+        if(!string || Number(string)) return 'String não válida';
+
+        for(let i = 0; i < string.length; i++){
+           if(string[i] !== string[string.length - 1 - i]) {
+               return false;
+           }
+        }
+    return true;
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+console.log(verificaPalindromo('radar'));
