@@ -23,7 +23,7 @@ function verificaPalindromo(string){
     try {
         if(!string || Number(string)) return 'String não válida';
 
-        for(let i = 0; i < string.length; i++){
+        for(let i = 0; i < string.length ; i++){  //other way divide por 2, funciona igual
            if(string[i] !== string[string.length - 1 - i]) {
                return false;
            }
