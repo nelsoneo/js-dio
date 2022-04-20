@@ -18,7 +18,7 @@ class Animal {
 
 class Cat extends Animal {
     constructor(){ 
-        super('cat');  //super() 
+        super('cat');  //chama o constructor de a classe pai
     }
 
     makeSound(){
