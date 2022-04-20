@@ -22,7 +22,8 @@ function isNumber(num) {
       return `${num} is a number`;
     }
   } catch (error) {
-    console.log(error);
+      throw error;
+    // console.log(error);
   }
 }
 
